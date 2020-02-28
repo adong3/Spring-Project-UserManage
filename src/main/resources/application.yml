@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.101.13:12345/friday?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false
+    username: root
+    password: 123
+    platform: mysql
+    type: com.alibaba.druid.pool.DruidDataSource
+    
+
+mybatis:
+  type-aliases-package: com.adong3.fullstack.model
+  mapper-locations: classpath:/mybatis-mappers/*.xml
+  configuration:
+    mapUnderscoreToCamelCase: true
+
+api-url: /api
